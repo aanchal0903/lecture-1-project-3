@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 45px;
+
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+    <script>
+        function show()
+        {
+            let d = new Date();
+            let hr = d.getHours();
+            let msg="";
+            if(hr<12)
+               msg = "Good Morning";
+            else if(hr<16)
+               msg="Good afternoon";
+            else
+               msg="Good evening";
+            alert(msg);
+               
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Greeting App</h1>
+        <form onsubmit="show()">
+        <input type="submit" value="greeting">
+        </form>
+    </center>
+
+    
+</body>
+</html>
